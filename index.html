@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Launcher</title>
+  <title>Learning Launcher</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -24,8 +24,8 @@
 </head>
 <body>
 
-<h1>Launcher</h1>
-<p id="countdownText">Football Bros will be available in <span id="countdown">5</span> seconds</p>
+<h1>Learning Launcher</h1>
+<p id="countdownText">Multiplication Game will be available in <span id="countdown">5</span> seconds </p>
 <button id="startBtn" disabled>Launch</button>
 
 <script>
@@ -40,14 +40,14 @@ const timer = setInterval(() => {
     countdownEl.textContent = countdown;
   } else {
     clearInterval(timer);
-    countdownText.textContent = "3.0.2";
+    countdownText.textContent = "Ready!";
     startBtn.disabled = false;
     startBtn.classList.add("enabled");
   }
 }, 1000);
 
 startBtn.addEventListener('click', () => {
-  window.location.href = "fb-main/index.html";
+  window.location.href = "multiplication-tables/index.html";
 });
 </script>
 
